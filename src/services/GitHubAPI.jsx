@@ -24,10 +24,9 @@ function GitHubAPI() {
         {
           repositories.map((repositories) => {
             return (
-              <div className="repo-box">
-                <div className="box-items"
-                  key={repositories.name}
-                >
+              <div className="repo-box" key={repositories.name}
+              >
+                <div className="box-items">
                   <h1>{repositories.name}</h1>
                   <h3>{repositories.language}</h3>
                   <p>{repositories.description}</p>
