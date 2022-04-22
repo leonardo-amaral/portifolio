@@ -1,0 +1,26 @@
+.Slider-section {
+  height: 100vh;
+  background-color: rgb(10, 10, 40);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title-slider {
+  color: white;
+  padding-top: 20px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin: 5% 5%;
+  color: #EEEEEE;
+  font-size: 36px;
+  border-top: 1px solid rgba(200, 200, 226, 0.1);
+}
+
+main {
+  margin: 1% 5%;
+}
