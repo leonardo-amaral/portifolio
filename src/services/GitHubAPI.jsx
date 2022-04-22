@@ -1,10 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import '../styles/GithubStyle/GithubAPI.css'
+import aos from 'aos'
 
 function GitHubAPI() {
   const [repositories, setRepositories] = useState([])
 
+  aos.init({
+    duration: 1000,
+    easing: 'ease-in',
+  })
 
   useEffect(() => {
     fetch('https://api.github.com/users/leonardo-amaral/repos')
@@ -14,7 +19,7 @@ function GitHubAPI() {
   })
 
   return (
-    <div className='GitHubAPI'>
+    <div className='GitHubAPI' data-aos="fade-up">
       <div className="box-api">
         {
           repositories.map((repositories) => {
