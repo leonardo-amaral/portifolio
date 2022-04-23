@@ -3,7 +3,6 @@ import Nav from '../components/Nav'
 import GitHubAPI from '../services/GitHubAPI'
 import '../styles/GithubStyle/Github.css'
 import aos from 'aos'
-import GithubProfile from '../services/GithubProfile'
 
 function Github() {
   aos.init({
@@ -14,7 +13,6 @@ function Github() {
   return (
     <div className='Github'>
       <Nav />
-      <GithubProfile />
       <div className="fadeup" data-aos="fade-up">
         <GitHubAPI />
       </div>

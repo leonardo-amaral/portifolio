@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineHome } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 import '../styles/Nav.css'
 

@@ -16,6 +16,7 @@
   width: 25vw;
   height: 50vh;
   border-radius: 10px;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .box-items {
@@ -23,4 +24,61 @@
   align-items: center;
   flex-direction: column;
   gap: 2vh;
+  margin: 0 5%;
+}
+
+
+.content-git {
+  margin: 2% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profille {
+  margin: 5%;
+  margin-bottom: 10%;
+  background-color: rgb(255, 255, 255);
+  width: 45%;
+  /* border-radius: 1000px; */
+}
+
+.git-image {
+  margin: 10%;
+  border-radius: 500px;
+  image-resolution: 100px;
+  width: 15vw;
+  height: 15vw;
+  border-right: 10px solid rgb(15, 15, 30);
+}
+
+.midias-git {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.midias-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: black;
+}
+
+.githubb {
+  color: black;
+}
+
+.nome {
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
