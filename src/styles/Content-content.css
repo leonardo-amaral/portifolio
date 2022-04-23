@@ -2,6 +2,7 @@
   width: 100vw;
   height: 70vh;
   background-color: rgb(10, 10, 40);
+  overflow-x: hidden;
 }
 
 .Skills {
@@ -78,7 +79,7 @@ a:hover {
 }
 
 .box-2 {
-  background-color: #6E87D3;
+  background-color: rgb(112, 112, 240);
   display: flex;
   flex-direction: column;
   gap: 1vh;
@@ -91,7 +92,7 @@ a:hover {
 }
 
 .box-3 {
-  background-color: #9086fac9;
+  background-color: rgb(112, 112, 240);
   display: flex;
   flex-direction: column;
   gap: 1vh;
@@ -104,7 +105,7 @@ a:hover {
 }
 
 p {
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   color: #EEEEEE;
   font-size: 24px;
 }

@@ -7,9 +7,9 @@ import Github from './pages/Github';
 function App() {
   return (
     <div className="App">
-      {/* <Introduction />
-      <Content /> */}
-      <Github />
+      <Introduction />
+      <Content />
+      {/* <Github /> */}
     </div>
   );
 }

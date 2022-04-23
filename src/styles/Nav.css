@@ -13,6 +13,7 @@
 header {
   background: rgb(10, 10, 30);
   width: 100%;
+  position: fixed;
 }
 
 nav {

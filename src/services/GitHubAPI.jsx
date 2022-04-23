@@ -49,12 +49,16 @@ function GitHubAPI() {
                 </div>
                 <div className="profile-dados">
                   <h1 className='nome'>{profile.name}</h1>
-                  <p>{profile.bio}</p>
+                  <div className="info-midia">
+                    <a className='follow' href="">Followers: {profile.followers}</a>
+                    <a className='follow' href="">Following: {profile.following}</a>
+                  </div>
+                  <p className='bio'>{profile.bio}</p>
                   <div className="midias-git">
                     <a className='midias-content' href={profile.blog}><FaLinkedin className='linkedin' />Linkedin</a>
                     <a className='midias-content' href={profile.html_url}><BsGithub className='githubb' />Ir para página Github oficial.</a>
                   </div>
-                  <p>{profile.location}</p>
+                  <p className='location'>{profile.location}</p>
                 </div>
               </div>
             </div>

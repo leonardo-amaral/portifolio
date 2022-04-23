@@ -5,6 +5,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 
 .div-mom {
@@ -38,10 +39,12 @@ h2 {
 
 .image {
   width: 40%;
+
 }
 
 .person {
   cursor: pointer;
+
 }
 
 #name-border {
