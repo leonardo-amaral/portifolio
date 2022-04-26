@@ -16,7 +16,7 @@ function Carousel() {
   return (
     <main>
       <motion.div ref={carousel} className='carousel'>
-        <motion.div animate={{ y: 1 }} drag="x" dragConstraints={{ right: 0, left: -width }} className='inner-carousel'>
+        <motion.div animate={{ y: 1 }} drag="x" dragConstraints={{ right: 5, left: -width }} className='inner-carousel'>
           {Images.map(Images => {
             return (
               <motion.div className='item' key={Images}>
