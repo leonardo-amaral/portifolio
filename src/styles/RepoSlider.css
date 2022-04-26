@@ -9,18 +9,18 @@
 .title-slider {
   color: white;
   padding-top: 20px;
+  margin: 0 5%;
 }
 
 .slide {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  margin: 5% 5%;
   color: #EEEEEE;
   font-size: 36px;
   border-top: 1px solid rgba(200, 200, 226, 0.1);
 }
 
 main {
-  margin: 1% 5%;
+  margin: 0
 }
