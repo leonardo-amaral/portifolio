@@ -5,18 +5,14 @@ import '../styles/GithubStyle/Github.css'
 import aos from 'aos'
 
 function Github() {
-  aos.init({
-    duration: 1000,
-    easing: 'ease-in',
-  })
 
   return (
     <div className='Github'>
       <Nav />
-      <div className="fadeup" data-aos="fade-up">
+      <div className="fadeup" >
         <GitHubAPI />
       </div>
-    </div>
+    </div >
   )
 }
 

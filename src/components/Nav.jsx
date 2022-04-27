@@ -1,15 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/Nav.css'
+import Aos from 'aos'
 
 function Nav() {
   return (
     <div>
-      <header>
-        <motion.nav
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1 }}>
+      <header data-aos="fade-up">
+        <motion.nav>
           <div className="items-logo">
             <motion.h1 className='logo'
               whileHover={{ scale: 1.1 }}
@@ -17,10 +15,10 @@ function Nav() {
               transition={{ duration: 0.1 }}
             >Leo<h1 className='amaral'>Amaral</h1></motion.h1>
             <div className='items-nav'>
-              <motion.a className='items' href="">Home</motion.a>
-              <motion.a className='items' href="">Project</motion.a>
-              <motion.a className='items' href="">About</motion.a>
-              <motion.a className='items' href="">Skills</motion.a>
+              <a className='items' href="">Home</a>
+              <a className='items' href="">Project</a>
+              <a className='items' href="">About</a>
+              <a className='items' href="">Skills</a>
             </div>
           </div>
         </motion.nav>

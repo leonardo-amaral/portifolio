@@ -8,7 +8,6 @@
 .Skills {
   color: #EEEEEE;
   font-size: 36px;
-  overflow: hidden;
 }
 
 .content-main {
@@ -16,111 +15,12 @@
   margin: 1% 5%;
   border-top: 1px solid rgba(200, 200, 226, 0.1);
   padding-top: 20px;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
 
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 2% 10%;
-}
-
-.icons-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5vw;
-}
-
-.items-media {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: #EEEEEE;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-
-.items-media:hover {
-  color: rgb(112, 112, 240);
-}
-
-.boxes {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 3.5vw;
-  width: 100%;
-  height: 20vh;
-}
-
-.tag-box {
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(200, 200, 226);
-  padding-bottom: 2 px;
-
-}
-
-.box-1 {
-  background-color: rgb(112, 112, 240);
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  cursor: grab;
-  border: 1px solid white;
-}
-
-.box-2 {
-  background-color: rgb(112, 112, 240);
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  width: 30%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  cursor: grab;
-  border: 1px solid white;
-}
-
-.box-3 {
-  background-color: rgb(112, 112, 240);
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  width: 30%;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  cursor: grab;
-  border: 1px solid white;
-}
-
-p {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  color: #EEEEEE;
-  font-size: 24px;
-}
-
-.title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 2px;
-  border-radius: 20px;
-  border: 1px solid rgb(200, 200, 226, 0.5);
-  gap: 1vw;
-}
-
-.react-icon {
+/* .react-icon {
   color: aqua;
   font-size: 36px;
   text-shadow: 5px 5px 10px black;
@@ -139,27 +39,4 @@ p {
   font-size: 36px;
   text-shadow: 5px 5px 10px black;
   padding: 5px;
-}
-
-.linkedin {
-  font-size: 18px;
-  color: rgb(0, 119, 181);
-}
-
-.github {
-  font-size: 18px;
-  color: #EEEEEE;
-}
-
-.instagram {
-  font-size: 18px;
-  color: #8a3ab9
-}
-
-.rocketseat {
-  color: #988BC7
-}
-
-.discord {
-  color: #7289da;
-}
+} */

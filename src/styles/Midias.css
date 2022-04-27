@@ -1,0 +1,49 @@
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2% 10%;
+}
+
+.icons-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.items-media {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #EEEEEE;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.items-media:hover {
+  color: rgb(112, 112, 240);
+}
+
+.linkedin {
+  font-size: 18px;
+  color: rgb(0, 119, 181);
+}
+
+.github {
+  font-size: 18px;
+  color: #EEEEEE;
+}
+
+.instagram {
+  font-size: 18px;
+  color: #8a3ab9
+}
+
+.rocketseat {
+  color: #988BC7
+}
+
+.discord {
+  color: #7289da;
+}
