@@ -13,5 +13,20 @@
     "title": "Design.",
     "skills": "Abode Photoshop, Adobe Premier, Adobe After Effects, Sony Vegas, Cinema 4D.",
     "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae illum quo tenetur quia hic vitae quis velit architecto dicta consequatur minima, asperiores ut? Cum libero impedit non reprehenderit autem."
+  },
+  {
+    "title": "FrontEnd.",
+    "skills": "HTML5, CSS3, JavaScript, ReactJS, TypeScript, Bootstrap.",
+    "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae illum quo tenetur quia hic vitae quis velit architecto dicta consequatur minima, asperiores ut? Cum libero impedit non reprehenderit autem."
+  },
+  {
+    "title": "BackEnd.",
+    "skills": "Node, PHP, Axios, TypeScript, VueJS, SQL, MySQL.",
+    "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae illum quo tenetur quia hic vitae quis velit architecto dicta consequatur minima, asperiores ut? Cum libero impedit non reprehenderit autem."
+  },
+  {
+    "title": "Design.",
+    "skills": "Abode Photoshop, Adobe Premier, Adobe After Effects, Sony Vegas, Cinema 4D.",
+    "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum recusandae illum quo tenetur quia hic vitae quis velit architecto dicta consequatur minima, asperiores ut? Cum libero impedit non reprehenderit autem."
   }
 ]
