@@ -39,6 +39,12 @@
   text-align: center;
 }
 
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .info-skills {
   margin: 2%;
   font-size: 24px;

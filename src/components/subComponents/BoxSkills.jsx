@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { FaReact } from 'react-icons/fa'
+import { FaNodeJs } from 'react-icons/fa'
+import { SiAdobeindesign } from 'react-icons/si'
 import '../../styles/BoxSkills.css'
 import '../../utils/info.json'
 
@@ -20,7 +23,7 @@ function BoxSkills() {
           info.map((info) => {
             return (
               <div className='info' key={info.title}>
-                <h1 className='title-box'>{info.title}</h1>
+                <h1 className='title-box'><FaReact />{info.title}</h1>
                 <h3 className='info-skills'>{info.skills}</h3>
                 <h4 className='description'>{info.description}</h4>
               </div>
