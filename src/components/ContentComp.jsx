@@ -1,5 +1,6 @@
 import React from 'react'
 import Midias from './subComponents/Midias'
+import BoxSkills from './subComponents/BoxSkills'
 import '../styles/Content-content.css'
 import { FaReact } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
