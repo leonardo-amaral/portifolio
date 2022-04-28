@@ -5,18 +5,18 @@ import { SiAdobeindesign } from 'react-icons/si'
 import '../../styles/BoxSkills.css'
 import Json from '../../utils/info.json'
 import Carton from '../../assets/webdev.svg'
+import axios from 'axios'
 
 
 function BoxSkills() {
   const [info, setInfo] = useState([])
 
   useEffect(() => {
-    fetch("../src/utils/info.json", {
-      headers: {
+    fetch('../src/utils/info.json',
+      Headers = {
         Accept: "application/json"
       }
-    })
-      .then(response => response.json())
+    ).then(response => response.json())
       .then(data => setInfo(data))
   }, [])
 
