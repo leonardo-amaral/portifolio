@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/Nav.css'
+import { Link } from 'react-router-dom'
 import Aos from 'aos'
 
 function Nav() {
@@ -15,10 +16,10 @@ function Nav() {
               transition={{ duration: 0.1 }}
             >Leo<h1 className='amaral'>Amaral</h1></motion.h1>
             <div className='items-nav'>
-              <a className='items' href="">Home</a>
-              <a className='items' href="">Project</a>
-              <a className='items' href="">About</a>
-              <a className='items' href="">Skills</a>
+              <Link to="/" className='items'>Home</Link>
+              <Link to="/" className='items'>Skills</Link>
+              <Link to="/" className='items'>About</Link>
+              <Link to="/projects" className='items'>Project</Link>
             </div>
           </div>
         </nav>

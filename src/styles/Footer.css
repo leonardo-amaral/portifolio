@@ -1,0 +1,38 @@
+footer {
+  width: 100%;
+  height: 20vh;
+  background: rgb(10, 10, 10);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.content-footer {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.email {
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.numero-zap {
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.copyright {
+  width: 25%;
+}
+
+.copyright-text {
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 100;
+}
