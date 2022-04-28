@@ -6,8 +6,8 @@ import Aos from 'aos'
 function Nav() {
   return (
     <div>
-      <header data-aos="fade-up">
-        <motion.nav>
+      <header>
+        <nav>
           <div className="items-logo">
             <motion.h1 className='logo'
               whileHover={{ scale: 1.1 }}
@@ -21,7 +21,7 @@ function Nav() {
               <a className='items' href="">Skills</a>
             </div>
           </div>
-        </motion.nav>
+        </nav>
       </header>
     </div>
   )

@@ -5,7 +5,10 @@
   border-top: 1px solid rgba(200, 200, 226, 0.1);
 }
 
-/* .content-sobre {} */
+.content-sobre {
+  display: flex;
+  gap: 1vw;
+}
 
 .sobre-min {
   color: #EEEEEE;
@@ -13,13 +16,53 @@
   margin: 2% 5%;
 }
 
-.card-sobre {
+.card-position {
   width: 50%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  /* border-top-left-radius: 1000px; */
+  overflow: hidden;
+}
+
+.info-sobre {
+  background-color: rgba(112, 112, 240, 1);
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.8);
+  border: 3px solid #dddddd;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+}
+
+.card-sobre {
+  width: 20%;
   height: 50vh;
   background-color: #dddddd;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 5000px;
+  border: 3px solid rgb(112, 112, 240);
+  border-left: none;
+  border-bottom-right-radius: 1000px;
+  border-top-right-radius: 10px;
   display: flex;
+  overflow: hidden;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.8);
+  transition: 1s;
+}
+
+/* .card-sobre :nth-child(2) {
+  visibility: hidden;
+}
+
+.card-sobre ::nth-child(2) {
+  visibility: visible;
+} */
+
+.card-sobre:hover {
+  width: 100%;
 }
 
 .image-sobre {
@@ -28,10 +71,19 @@
 }
 
 .eu-sobre {
-  width: 100%;
+  width: 80%;
   border-radius: 1000px;
+  border: 3px solid rgb(112, 112, 240);
+  margin: 10%;
+  display: flex;
+  transition: 1s;
+}
+
+.eu-sobre:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 .text-sobre {
   width: 40%;
+  margin: 10%;
 }

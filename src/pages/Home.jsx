@@ -12,7 +12,7 @@ function Home() {
       <Nav />
       <IntroContent />
       <Midias />
-      <Sobre />
+      {/* <Sobre /> */}
       <ContentComp />
       <RepoSlider />
     </div>

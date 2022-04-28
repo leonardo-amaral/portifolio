@@ -4,6 +4,7 @@ import { FaNodeJs } from 'react-icons/fa'
 import { SiAdobeindesign } from 'react-icons/si'
 import '../../styles/BoxSkills.css'
 import '../../utils/info.json'
+import Carton from '../../assets/webdev.svg'
 
 
 function BoxSkills() {
@@ -24,6 +25,7 @@ function BoxSkills() {
             return (
               <div className='info' key={info.title}>
                 <h1 className='title-box'><FaReact className='react-icon' />{info.title}</h1>
+                <img className='image-skills' src={Carton} alt="" />
                 <h3 className='info-skills'>{info.skills}</h3>
                 <h4 className='description'>{info.description}</h4>
               </div>
