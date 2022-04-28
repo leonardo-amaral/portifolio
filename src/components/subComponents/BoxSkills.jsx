@@ -9,23 +9,23 @@ import axios from 'axios'
 
 
 function BoxSkills() {
-  const [info, setInfo] = useState([])
-
-  useEffect(() => {
-    fetch('../src/utils/info.json',
-      Headers = {
-        Accept: "application/json"
-      }
-    ).then(response => response.json())
-      .then(data => setInfo(data))
-  }, [])
+  // const [info, setInfo] = useState([])
+  // console.log(Json)
+  // useEffect(() => {
+  //   fetch('../src/utils/info.json',
+  //     Headers = {
+  //       Accept: "application/json"
+  //     }
+  //   ).then(response => response.json())
+  //     .then(data => setInfo(data))
+  // }, [])
 
 
   return (
     <div className='box-main'>
       <div className="box">
         {
-          info.map((info) => {
+          Json.map((info) => {
             return (
               <div className='info' key={info.title}>
                 <h1 className='title-box'><FaReact className='react-icon' />{info.title}</h1>
