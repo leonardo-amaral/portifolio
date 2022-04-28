@@ -3,7 +3,7 @@ import { FaReact } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiAdobeindesign } from 'react-icons/si'
 import '../../styles/BoxSkills.css'
-import '../../utils/info.json'
+import Json from '../../utils/info.json'
 import Carton from '../../assets/webdev.svg'
 
 
@@ -11,7 +11,11 @@ function BoxSkills() {
   const [info, setInfo] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/src/utils/info.json")
+    fetch("../src/utils/info.json", {
+      headers: {
+        Accept: "application/json"
+      }
+    })
       .then(response => response.json())
       .then(data => setInfo(data))
   }, [])
