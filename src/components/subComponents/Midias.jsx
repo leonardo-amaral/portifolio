@@ -8,7 +8,7 @@ import { BsDiscord } from 'react-icons/bs'
 
 export default function Midias() {
   return (
-    <div>
+    <div className='Midias'>
       <div className='social-media'>
         <div className='icons-text'>
           <FaLinkedin className='linkedin' />

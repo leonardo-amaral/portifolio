@@ -1,8 +1,14 @@
+.Midias {
+  background-color: rgb(10, 10, 40);
+  overflow: hidden;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 2% 10%;
+  background-color: rgb(10, 10, 40);
 }
 
 .icons-text {

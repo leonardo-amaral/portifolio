@@ -23,7 +23,7 @@ function BoxSkills() {
           info.map((info) => {
             return (
               <div className='info' key={info.title}>
-                <h1 className='title-box'><FaReact />{info.title}</h1>
+                <h1 className='title-box'><FaReact className='react-icon' />{info.title}</h1>
                 <h3 className='info-skills'>{info.skills}</h3>
                 <h4 className='description'>{info.description}</h4>
               </div>

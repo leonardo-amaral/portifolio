@@ -55,3 +55,10 @@
   margin: 2%;
   text-shadow: 1px 1px 1px #dcdcdc;
 }
+
+.react-icon {
+  color: aqua;
+  font-size: 45px;
+  text-shadow: 5px 5px 10px black;
+  padding: 5px;
+}

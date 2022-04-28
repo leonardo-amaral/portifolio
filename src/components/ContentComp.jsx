@@ -16,7 +16,6 @@ function Content() {
   return (
     <div>
       <section className='content-style'>
-        <Midias />
         <div className='content-main'>
           <div className="skills-title">
             <h1 className='Skills'>Skills:</h1>
