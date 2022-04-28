@@ -12,9 +12,9 @@ function BoxSkills() {
 
   useEffect(() => {
     fetch("../src/utils/info.json", {
-      // headers: {
-      //   Accept: "application/json"
-      // }
+      headers: {
+        Accept: "application/json"
+      }
     })
       .then(response => response.json())
       .then(data => setInfo(data))
