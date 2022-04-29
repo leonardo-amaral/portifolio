@@ -5,7 +5,6 @@ import { SiAdobeindesign } from 'react-icons/si'
 import '../../styles/BoxSkills.css'
 import Json from '../../utils/info.json'
 import Carton from '../../assets/webdev.svg'
-import axios from 'axios'
 
 
 function BoxSkills() {
@@ -19,7 +18,6 @@ function BoxSkills() {
   //   ).then(response => response.json())
   //     .then(data => setInfo(data))
   // }, [])
-
 
   return (
     <div className='box-main'>
@@ -37,7 +35,7 @@ function BoxSkills() {
           })
         }
       </div>
-    </div>
+    </div >
   )
 }
 
