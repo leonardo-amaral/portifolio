@@ -3,15 +3,12 @@ import { useEffect, useState } from 'react'
 import '../styles/GithubStyle/GithubAPI.css'
 import { FaLinkedin } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
-import aos from 'aos'
+import { Text } from '@chakra-ui/react'
+import { Repositories } from '../components/subComponents/Repositories'
+import { ImageRepositories } from '../components/subComponents/ImagesRepositories'
+import ImagesRepo from '../utils/imagesRepo.json'
 
-function GitHubAPI() {
-
-  aos.init({
-    duration: 1000,
-    easing: 'ease-in',
-  })
-
+export default function GitHubAPI() {
 
   const [profile, setProfile] = useState([])
   const [repositories, setRepositories] = useState([])
@@ -30,11 +27,6 @@ function GitHubAPI() {
       })
   }, [])
 
-
-
-
-
-
   return (
     <div className='GitHubAPI' data-aos="fade-up">
       <div className="profille">
@@ -43,24 +35,7 @@ function GitHubAPI() {
           profile != undefined &&
           (
             <div className="profile-content">
-              <div className="content-git">
-                <div className="img-git">
-                  <img className='git-image' src={profile.avatar_url} alt="" />
-                </div>
-                <div className="profile-dados">
-                  <h1 className='nome'>{profile.name}</h1>
-                  <div className="info-midia">
-                    <a className='follow' href="">Followers: {profile.followers}</a>
-                    <a className='follow' href="">Following: {profile.following}</a>
-                  </div>
-                  <p className='bio'>{profile.bio}</p>
-                  <div className="midias-git">
-                    <a className='midias-content' href={profile.blog}><FaLinkedin className='linkedin' />Linkedin</a>
-                    <a className='midias-content' href={profile.html_url}><BsGithub className='githubb' />Ir para página Github oficial.</a>
-                  </div>
-                  <p className='location'>{profile.location}</p>
-                </div>
-              </div>
+              
             </div>
           )
         }
@@ -69,23 +44,8 @@ function GitHubAPI() {
 
       </div>
       <div className="box-api">
-        {
-          repositories.map((repositories) => {
-            return (
-              <div className="repo-box" key={repositories.name}
-              >
-                <div className="box-items">
-                  <h1>{repositories.name}</h1>
-                  <h3>{repositories.language}</h3>
-                  <p>{repositories.description}</p>
-                </div>
-              </div>
-            )
-          })
-        }
+          <Repositories />
       </div>
     </div>
   )
 }
-
-export default GitHubAPI

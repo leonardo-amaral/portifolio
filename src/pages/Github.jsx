@@ -12,7 +12,7 @@ function Github() {
       <div className="fadeup" >
         <GitHubAPI />
       </div>
-    </div >
+    </div>
   )
 }
 

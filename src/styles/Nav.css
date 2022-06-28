@@ -12,7 +12,6 @@
 header {
   background: rgb(10, 10, 30);
   width: 100%;
-  position: fixed;
 }
 
 nav {
@@ -54,4 +53,12 @@ nav {
 
 .amaral {
   color: #7289da;
+}
+
+.Link {
+  transition: 0.5s;
+}
+
+.Link:hover {
+  transform: scale(1.1);
 }
