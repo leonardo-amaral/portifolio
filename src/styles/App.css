@@ -27,3 +27,8 @@ html {
   height: 2px;
   border-radius: 10px;
 }
+
+a {
+  outline: none;
+  text-decoration: none;
+}

@@ -1,23 +1,24 @@
 .GitHubAPI {
   width: 100%;
-  height: 350vh;
+  height: 410vh;
 }
 
 .box-api {
   margin: 5% 5%;
   display: flex;
-  justify-content: space-between;
-  gap: 2vw;
+  justify-content: space-around;
+  gap: 2.5vw;
   flex-wrap: wrap;
 }
 
 .repo-box {
   background: rgb(112, 112, 240);
   width: 25vw;
-  height: 40vh;
+  height: 50vh;
   border-radius: 5px;
   box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
   transition: 0.8s;
+  overflow: hidden;
   /* border: 2px solid white;    */
 }
 
@@ -102,9 +103,10 @@
   height: 60%;
   cursor: pointer;
   filter: opacity(0.6);
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .image-repo-git:hover {
+  transform: scale(1.2);
   filter: opacity(1);
 }
