@@ -3,6 +3,8 @@ import '../../styles/CarouselStyle.css'
 import { motion } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 import Images from '../../assets/RepoImages'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function Carousel() {
 

@@ -2,12 +2,15 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/Nav.css'
 import { Link } from 'react-router-dom'
-import Aos from 'aos'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 function Nav() {
+  AOS.init();
   return (
     <div>
-      <header>
+      <header data-aos="fade-down">
         <nav>
           <div className="items-logo">
             <motion.h1 className='logo'

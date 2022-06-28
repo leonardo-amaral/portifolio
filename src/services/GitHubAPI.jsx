@@ -7,6 +7,8 @@ import { Text } from '@chakra-ui/react'
 import { Repositories } from '../components/subComponents/Repositories'
 import { ImageRepositories } from '../components/subComponents/ImagesRepositories'
 import ImagesRepo from '../utils/imagesRepo.json'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function GitHubAPI() {
 
@@ -26,6 +28,11 @@ export default function GitHubAPI() {
         setProfile(result)
       })
   }, [])
+  AOS.init({
+    duration: 1000,
+    easing: 'ease'
+  });
+
 
   return (
     <div className='GitHubAPI' data-aos="fade-up">
@@ -34,15 +41,24 @@ export default function GitHubAPI() {
         {
           profile != undefined &&
           (
-            <div className="profile-content">
-              
+            <div className="profile-container">
+              <div className="profile-content">
+                <Text>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</Text>
+                <Text>AA</Text>
+                <Text>AA</Text>
+                <Text>AA</Text>
+                <Text>AA</Text>
+                <Text>AA</Text>
+                <Text>AA</Text>
+              </div>
+              <div>
+              aaaaaaaaa
+              </div>
             </div>
           )
         }
-
-
-
       </div>
+
       <div className="box-api">
           <Repositories />
       </div>

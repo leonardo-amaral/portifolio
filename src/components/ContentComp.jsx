@@ -11,10 +11,14 @@ import { FaInstagram } from 'react-icons/fa'
 import { FaRocket } from 'react-icons/fa'
 import { BsDiscord } from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 function Content() {
+  AOS.init();
   return (
-    <div>
+    <div data-aos="fade-down">
       <section className='content-style'>
         <div className='content-main'>
           <div className="skills-title">

@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Box, Text } from '@chakra-ui/react'
 import JSONImages from '../../utils/imagesRepo.json'
 import IMAGE1 from '../../assets/Image2.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 export function Repositories (){
   const [repositories, setRepositories] = useState([])
@@ -21,14 +24,17 @@ export function Repositories (){
         setRepositories(newData)
       })
   }, [])
-
+  AOS.init({
+    duration: 1000,
+    easing: 'ease'
+  });
 
   return(
     <div className="box-api">
         {
           repositories.map((repositories) => {
             return (
-          <div className="repo-box" key={repositories.name}
+          <div className="repo-box" data-aos="fade-up" key={repositories.name}
           >
           <a href={repositories.html_url} target="new_blank">
           <Text color='white' fontSize='24px' fontWeight='800' textTransform='lowerrcase' h='6vh' w='100%' backgroundColor='rgb(40, 40, 125)' textAlign='center' paddingTop='15px'>{repositories.name}</Text>
