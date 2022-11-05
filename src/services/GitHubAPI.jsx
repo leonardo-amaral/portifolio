@@ -14,6 +14,7 @@ export default function GitHubAPI() {
 
   const [profile, setProfile] = useState([])
   const [repositories, setRepositories] = useState([])
+  const [bgSize, setBgSize] = useState()
 
   useEffect(() => {
     fetch('https://api.github.com/users/leonardo-amaral/repos')
@@ -27,6 +28,8 @@ export default function GitHubAPI() {
       .then(result => {
         setProfile(result)
       })
+
+      console.log(profile)
   }, [])
   AOS.init({
     duration: 1000,
@@ -41,19 +44,12 @@ export default function GitHubAPI() {
         {
           profile != undefined &&
           (
-            <div className="profile-container">
-              <div className="profile-content">
-                <Text>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</Text>
-                <Text>AA</Text>
-                <Text>AA</Text>
-                <Text>AA</Text>
-                <Text>AA</Text>
-                <Text>AA</Text>
-                <Text>AA</Text>
+            <div className="profile-container" >
+              <div className="profile-content" style={{ width: bgSize, padding: '2vw'}} onMouseEnter={() =>  setBgSize('55vw')}>
+              <img style={{marginLeft: '7vw', borderRadius: '200px', border: '10px solid white'}} src={profile.avatar_url} />
+                <h1 style={{ fontSize: '24px', width: '20vw', marginLeft: '10vw'}}>{profile?.name}</h1>
               </div>
-              <div>
-              aaaaaaaaa
-              </div>
+
             </div>
           )
         }

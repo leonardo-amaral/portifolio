@@ -16,12 +16,13 @@ export function Repositories (){
         const newData = data.map((repo, index) => {
           return {
             ...repo,
-           ...(JSONImages[index].id === repo.id && {
+           ...(JSONImages[index]?.id === repo?.id && {
               image: JSONImages[index].imagem
            })
           }
         })
         setRepositories(newData)
+        console.log(data)
       })
   }, [])
   AOS.init({
@@ -32,7 +33,7 @@ export function Repositories (){
   return(
     <div className="box-api">
         {
-          repositories.map((repositories) => {
+          repositories?.map((repositories) => {
             return (
           <div className="repo-box" data-aos="fade-up" key={repositories.name}
           >
